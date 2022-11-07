@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    display: flex;
+}
+.logo{
+    width: 50%;
+    height: 50px;
+   padding: 15px 0px 15px 80px;
+   margin-left: 100px;
+}
+.logo img{
+    height: 100%;
+}
+nav{
+    width: 50%;
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin-top: 16px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 18px 15px;
+   
+}
+nav ul li a{
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+    font-size: 12px;
+}
+
+#home{
+    background-image: url(img/bannar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12pc 0px;
+}
+.container{
+    text-align: center;
+    padding: 50px;
+}
+hr{
+    display: none;
+    background-color: rgb(30, 141, 216);
+    width: 30pc;
+    height: 2px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0px;
+}
+h1{
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+}
+
+button{
+    border: 1px solid rgb(30, 141, 216);
+    background-color: rgba(255,255,255, 0);
+    color: #fff;
+    padding: 15px 25px;
+}
+/*
+=======================
+about-start
+=======================
+*/
+.about-part{
+    line-height: 20px;
+    background-color: #f6f9f9;
+}
+h2{
+    font-size: 20px; 
+    color: #2d3950;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+   padding: 30px;
+}
+ p{
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    color:#999999;
+}
+/* 
+================== 
+about-end
+==================
+*/
+
+/*
+=======================
+services-start
+=======================
+*/
+.box{
+display: flex;
+justify-content: center;
+column-gap: 160px;
+}
+.box img{
+    background-image: conic-gradient( #5fc3ff 0deg 180deg, #48baff 180deg 360deg);
+    padding: 16px;
+    height: 80px;
+    width: 70px;
+}
+
+/* .box .icon{
+    width: 20px;
+    height: 30px;
+    padding: 10px;
+} */
+h3{
+  font-size: 15px;  
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+}
+/* 
+================== 
+services-end
+==================
+*/
+/* 
+=========== 
+portfolio-start
+===========
+*/
+.port-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 50px 3.5pc;
+    row-gap: 25px;
+}
+#portfolio h2{
+    font-size: 30px;
+}
+.port-img {
+    position: relative;
+    width: 95%;
+    height: 260px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #1c9cebcd;
+    color: #fff;
+    text-align: center;
+    visibility: hidden;
+    transition: all 0.6s;
+    transform: scale(0);
+    overflow: hidden;
+    
+}
+.overlay i{
+    border: 1px solid white;
+    margin-top: 90px;
+    padding: 20px;
+  
+    
+}
+.port-img:hover .overlay {
+    visibility: visible;
+    transform: scale(1);
+    overflow: hidden;
+
+
+}
+/* 
+=========== 
+portfolio-end
+===========
+*/
+/* 
+========== 
+contact-start
+==========
+*/
+#contact{
+ 
+    background-image: url(img/from-part.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.from-part{
+display: block;
+background-color: #2a354ac4;
+padding: 2pc 1pc;
+margin: -3.12pc -3.1pc;
+}
+.from-part input[type="text"],
+.from-part input[type="email"]{
+    background-color: #2a354abd;
+    border: 1px solid rgba(204, 204, 204, 0.51);
+    padding: 8px;
+    margin: 6px;
+    width: 24.6pc;
+
+}
+.from-part h2{
+    color: white;
+}
+.from-part textarea{
+    height: 90px;
+    width: 393px;
+    background-color: #2a354a64;
+    border: 1px solid rgba(204, 204, 204, 0.518);
+    resize: none;
+    text-align: left;
+    color: white;
+    padding: 8px;
+}
+ input[type="submit"]{
+    padding: 10px 48px;
+    margin-top: 10px;
+    background-color: #2a354a56;
+    border: 1px solid #1c86c8;
+    color: #fff;
+    font-style: bold;
+    font-size: 15px;
+ }
+.from-part p{
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+footer{
+ height: 50px;
+ width: 100%;
+ display: flex;
+}
+span{
+   width: 40%;
+    margin-top: 20px;
+    text-align: center;
+}
+.footr-part{
+    width: 60%;
+    text-align: center;
+    margin: 20px ;
+
+}
+.footr-part i{
+    padding: 10px 12px;
+    background-color: #15a4fa;
+    margin: -4px 8px 10px 8px;
+    color: #fff;
+}
+/* 
+========== 
+contact-end
+==========
+*/
